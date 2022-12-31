@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #e0c4ec;
+    --secondary-color: #c8a4d4;
+    --white-color: rgb(255, 245, 245);
+    --purple-color: #fc64cc;
+    --cream-color: #ffdce4;
+    --yellow-color: #fff484;
+    --font-color: rgb(47, 47, 47);
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ecccf4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 300px;
+    height: 560px;
+    padding: 0;
+    margin: 0;
+    
+    border: 5px solid black;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px 10px 10px;
+    background-color: var(--secondary-color);
+    border-radius: 10px 10px 20px 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+#screen-output {
+    font-size: 70px;
+    color: var(--font-color);
+}
+
+.button-container {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 12% 88%;
+}
+
+.expressions {
+    margin-inline: 2%;
+    width: 96%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.expressions button {
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    border-radius: 100%;
+    font-weight: 600;
+}
+
+#options {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: var(--white-color);
+}
+
+.options span {
+    display: block;
+}
+
+.buttons table {
+    margin: auto;
+    padding: 0px;
+    border-spacing: 5px;
+}
+
+
+
+.buttons td {
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
+    background-color: var(--white-color);
+    font-size: 20px;
+    text-align: center;
+}
+
+#equals {
+    font-size: 40px;
+    color: grey;
+    background-color: var(--yellow-color);
+}
+
+#equals:hover {
+    background-color: #fbed52;
+    cursor: pointer;
+}
+
+#ac {
+    background-color: var(--purple-color);
+}
+#ac:hover {
+    background: #fea0e0;
+}
+
+.cream {
+    background-color: var(--cream-color) !important;
+}
+
+.cream:hover {
+    background-color: #ffbaca !important;
+}
+
+button:hover, td:hover {
+    background: rgba(255, 255, 255, 0.432);
+    cursor: pointer;
+}
